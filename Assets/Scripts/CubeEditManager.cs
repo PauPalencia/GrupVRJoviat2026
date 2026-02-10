@@ -105,10 +105,11 @@ public class CubeEditManager : MonoBehaviour
                 Debug.Log("🟢 Cubo creado y modo edición activado");
             }
             // Si el cubo ya existe
-            else
-            {
-                RepositionCube();
-                Debug.Log("📍 Cubo reposicionado");
+            else {
+                if (editMode) {
+                    RepositionCube();
+                    Debug.Log("📍 Cubo reposicionado");
+                }
             }
         }
     }
@@ -150,9 +151,16 @@ public class CubeEditManager : MonoBehaviour
         {
             // Se desactiva el modo edición
             // El cubo queda fijo en su estado actual
-            editMode = false;
-
-            Debug.Log("🔴 Modo edición desactivado");
+            if (editMode == false)
+            {
+                editMode = true;
+                Debug.Log("🟢 Modo edición activado");
+            }
+            else
+            {
+                editMode = false;
+                Debug.Log("🔴 Modo edición desactivado");
+            }
         }
     }
 
