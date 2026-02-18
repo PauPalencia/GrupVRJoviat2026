@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97975ec74d91c454b8232e43a40bf98b
+timeCreated: 1475253165
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Prefabs/FishHolder.prefab
+  uploadId: 167339

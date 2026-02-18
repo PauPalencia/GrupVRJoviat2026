@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c52efb63ed8f46b4784ac3e6342c558f
+timeCreated: 1486635035
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/Panel.controller
+  uploadId: 167339

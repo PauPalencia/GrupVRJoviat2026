@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 6d183c695764e3242982dc995d781b47
+timeCreated: 1474476078
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Scripts/LookAt.cs
+  uploadId: 167339

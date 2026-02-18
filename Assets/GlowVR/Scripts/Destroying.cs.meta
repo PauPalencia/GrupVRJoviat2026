@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 2a412e2e994700b47bc8e318286e121c
+timeCreated: 1474394508
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Scripts/Destroying.cs
+  uploadId: 167339

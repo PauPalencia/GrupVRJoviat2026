@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e9045907c5b97c14899214e245676dd5
+timeCreated: 1475229394
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/Light 3.mat
+  uploadId: 167339

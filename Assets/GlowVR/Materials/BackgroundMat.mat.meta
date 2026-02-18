@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 531e59ca5bff93e42bf7018689d58925
+timeCreated: 1475226996
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/BackgroundMat.mat
+  uploadId: 167339

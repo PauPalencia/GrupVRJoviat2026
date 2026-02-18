@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 65139254ce2519c4d8a4bf51493e0ae1
+timeCreated: 1474398195
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Models/FishAnimated.prefab
+  uploadId: 167339

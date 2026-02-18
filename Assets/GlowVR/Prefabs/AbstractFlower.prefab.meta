@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0ee8ba4816090084e93570ff50d39c43
+timeCreated: 1475412654
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Prefabs/AbstractFlower.prefab
+  uploadId: 167339

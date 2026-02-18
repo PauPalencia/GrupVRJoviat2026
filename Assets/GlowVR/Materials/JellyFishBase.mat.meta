@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4a13c5a9acc095343a6c00a66880d03b
+timeCreated: 1475081353
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/JellyFishBase.mat
+  uploadId: 167339

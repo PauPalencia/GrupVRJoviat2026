@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1d107ce48b91605459ea068ae322dccf
+timeCreated: 1475160313
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/SoundFX_Particle.mat
+  uploadId: 167339

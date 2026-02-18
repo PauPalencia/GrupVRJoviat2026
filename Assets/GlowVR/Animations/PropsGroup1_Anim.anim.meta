@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7b0b2003d047b6d42b0d927951560793
+timeCreated: 1475259738
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/PropsGroup1_Anim.anim
+  uploadId: 167339

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5cfc1d4004a09e740843a929a95214d1
+timeCreated: 1475264722
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/Text (1).controller
+  uploadId: 167339

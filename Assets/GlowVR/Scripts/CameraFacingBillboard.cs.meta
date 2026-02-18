@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: e2fa52de0f991f54a9ae371cd665746c
+timeCreated: 1474476343
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Scripts/CameraFacingBillboard.cs
+  uploadId: 167339

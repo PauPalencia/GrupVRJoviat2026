@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b0435a5c8a7956c44aeb72469187e3da
+timeCreated: 1475152062
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/JellyFish_Anim.anim
+  uploadId: 167339

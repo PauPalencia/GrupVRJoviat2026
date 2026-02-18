@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb4acc2cdadb5a340abbc3ae1d4a3634
+timeCreated: 1474376744
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/Particle 2.mat
+  uploadId: 167339

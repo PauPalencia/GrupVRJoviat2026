@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df02597b2d62e45429a6baf90f72abda
+timeCreated: 1487148387
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Effects/Particle System.prefab
+  uploadId: 167339

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 18aaca0575b1a36439be23cde6ff9143
+timeCreated: 1475253120
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Prefabs/SharkSpawner.prefab
+  uploadId: 167339

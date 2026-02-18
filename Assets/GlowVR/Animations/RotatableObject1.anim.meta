@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db839e402f8008744b9989ce6958c682
+timeCreated: 1486638438
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/RotatableObject1.anim
+  uploadId: 167339

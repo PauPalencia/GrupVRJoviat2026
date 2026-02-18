@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b4aa31101e9de774195b34587dbedaba
+timeCreated: 1474373207
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Demo.unity
+  uploadId: 167339

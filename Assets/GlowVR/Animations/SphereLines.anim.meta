@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1eae8751368a0f64fa675457452e8f38
+timeCreated: 1475224408
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/SphereLines.anim
+  uploadId: 167339

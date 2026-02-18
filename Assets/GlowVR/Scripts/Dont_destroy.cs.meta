@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7ef443fe732abe74bb388673bc37a5ae
+timeCreated: 1486649089
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Scripts/Dont_destroy.cs
+  uploadId: 167339

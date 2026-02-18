@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: ab7354bc6814bba408b069adcf46f9dc
+timeCreated: 1475227337
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Scripts/UVW_Animated.cs
+  uploadId: 167339

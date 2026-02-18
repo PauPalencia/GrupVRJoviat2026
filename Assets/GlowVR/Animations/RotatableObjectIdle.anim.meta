@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2ef351fcf7d6a8f418a1e6e51255c891
+timeCreated: 1486641134
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/RotatableObjectIdle.anim
+  uploadId: 167339

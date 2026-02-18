@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 62970a4ec3590ca4b9db9ddb9e0b16ab
+timeCreated: 1475401182
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/FlowerMat.mat
+  uploadId: 167339

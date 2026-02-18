@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8cc1b31d46f4a214ab40dc23bb0e6345
+timeCreated: 1474397638
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/EYE_FSH.mat
+  uploadId: 167339

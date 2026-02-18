@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 344925680b1f28140bb7a584b3280042
+timeCreated: 1474487114
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/ScoreText_2.anim
+  uploadId: 167339

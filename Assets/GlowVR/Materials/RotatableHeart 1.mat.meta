@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa8c2a04904d7a54aa7a79ec73cc14b2
+timeCreated: 1487079907
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/RotatableHeart 1.mat
+  uploadId: 167339

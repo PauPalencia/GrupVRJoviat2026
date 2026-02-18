@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0aeee3b41fb5bc243826d1c2affc0bcb
+timeCreated: 1487147890
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Animations/Background_Effect.anim
+  uploadId: 167339

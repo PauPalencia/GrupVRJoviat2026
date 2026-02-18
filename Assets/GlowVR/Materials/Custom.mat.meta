@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d985efd917d179841981d00cb12d6a5b
+timeCreated: 1475081353
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/Custom.mat
+  uploadId: 167339

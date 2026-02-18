@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c37a3461204d0245b1524cb624ab77d
+timeCreated: 1474374439
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Materials/Medusa.mat
+  uploadId: 167339

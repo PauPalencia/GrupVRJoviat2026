@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a30b4b820219a334a8a531d4f7fef130
+timeCreated: 1474391324
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 72873
+  packageName: Glow VR
+  packageVersion: 1.1
+  assetPath: Assets/GlowVR/Scripts/Explosions.cs
+  uploadId: 167339
