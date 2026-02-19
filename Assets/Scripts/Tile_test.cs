@@ -45,7 +45,7 @@ public class Tile_test : MonoBehaviour
     {
         if (panelRenderer == null)
         {
-            // Busca automáticamente el hijo llamado "panel"
+            // Busca automï¿½ticamente el hijo llamado "panel"
             panelRenderer = transform.Find("panel")?.GetComponent<Renderer>();
         }
 
@@ -61,6 +61,7 @@ public class Tile_test : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("m'ha entrat el gameobject amb tag: " + other.tag);
         if (other.CompareTag("Player"))
         {
             if (panelRenderer != null && materialActivo != null)
@@ -68,7 +69,7 @@ public class Tile_test : MonoBehaviour
                 panelRenderer.material = materialActivo;
             }
 
-            Debug.Log("Player ENTRA en Tile con ID: " + id);
+           
         }
     }
 

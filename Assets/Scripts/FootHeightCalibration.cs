@@ -86,7 +86,8 @@ public class FootHeightCalibration : MonoBehaviour
         );
 
         // Añadimos el script de seguimiento
-        leftCube.AddComponent<FollowXZ>().target = leftController;
-        rightCube.AddComponent<FollowXZ>().target = rightController;
+        leftCube.AddComponent<FollowXYZ>().target = leftController;
+        rightCube.AddComponent<FollowXYZ>().target = rightController;
+
     }
 }

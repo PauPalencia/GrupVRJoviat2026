@@ -1,13 +1,11 @@
 using UnityEngine;
 
-public class FollowXZ : MonoBehaviour
+public class FollowXYZ : MonoBehaviour
 {
     public Transform target;
-    private float fixedY;
 
     void Start()
     {
-        fixedY = transform.position.y;
     }
 
     void Update()
@@ -16,8 +14,14 @@ public class FollowXZ : MonoBehaviour
 
         transform.position = new Vector3(
             target.position.x,
-            fixedY,
+            target.position.y,
             target.position.z
+        );
+        transform.rotation = new Quaternion(
+            target.rotation.x,
+            target.rotation.y,
+            target.rotation.z,
+            target.rotation.w
         );
     }
 }
