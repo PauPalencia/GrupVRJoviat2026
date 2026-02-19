@@ -62,7 +62,7 @@ public class Tile_test : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("m'ha entrat el gameobject amb tag: " + other.tag);
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Pies"))
         {
             if (panelRenderer != null && materialActivo != null)
             {
@@ -75,7 +75,7 @@ public class Tile_test : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Pies"))
         {
             if (panelRenderer != null && materialNormal != null)
             {
