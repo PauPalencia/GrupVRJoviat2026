@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ContadorSeciencaia: MonoBehaviour
+public class ContadorSecuencia: MonoBehaviour
 {
-    public static ContadorSeciencaia Instance;
+    public static ContadorSecuencia Instance;
 
     private bool gameOver = false;
 

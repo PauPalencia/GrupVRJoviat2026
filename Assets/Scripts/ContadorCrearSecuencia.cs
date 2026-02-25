@@ -11,11 +11,11 @@ public class ContadorCrearSecuencia : MonoBehaviour
     {
         if (alreadyTriggered) return;
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Pies"))
         {
             alreadyTriggered = true;
 
-            ContadorSeciencaia gm = ContadorSeciencaia.Instance;
+            ContadorSecuencia gm = ContadorSecuencia.Instance;
 
             if (gm != null)
             {
