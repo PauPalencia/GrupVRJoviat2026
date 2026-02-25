@@ -1,40 +1,59 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ContadorSecuencia : MonoBehaviour
 {
-    public static ContadorSecuencia Instance;
+    [Header("Secuencia objetivo")]
+    [SerializeField] private List<int> secuenciaObjetivo = new List<int> { 1, 2, 3, 4 };
 
-    private bool gameOver = false;
+    [Header("Acción al completar secuencia")]
+    [SerializeField] private Color colorAlCompletar = Color.green;
 
-    private void Awake()
+    [Header("Depuración")]
+    [SerializeField] private bool mostrarLogs = true;
+
+    private readonly List<int> secuenciaLeida = new List<int>();
+    public IReadOnlyList<int> SecuenciaLeida => secuenciaLeida;
+    public bool SecuenciaCompletada { get; private set; }
+
+    private void OnTriggerEnter(Collider other)
     {
-        Instance = this;
+        RegistrarToken(other.gameObject);
     }
 
-    public void RegisterNumber(int number)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (gameOver) return;
+        RegistrarToken(collision.gameObject);
+    }
 
-        Debug.Log("Número tocado: " + number);
-
-        if (number > 100)
+    private void RegistrarToken(GameObject token)
+    {
+        if (SecuenciaCompletada)
         {
-            TriggerGameOver();
+            return;
         }
-    }
 
-    private void TriggerGameOver()
-    {
-        gameOver = true;
-
-        Debug.Log("GAME OVER - Número mayor a 100");
-
-        // Buscar todas las placas en la escena
-        ContadorCrearSecuencia[] plates = FindObjectsOfType<ContadorCrearSecuencia>();
-
-        foreach (ContadorCrearSecuencia plate in plates)
+        if (!TokenSequenceUtils.TryGetTokenNumber(token, out int numero))
         {
-            plate.SetGameOverColor();
+            return;
+        }
+
+        secuenciaLeida.Add(numero);
+
+        if (mostrarLogs)
+        {
+            Debug.Log($"[ContadorSecuencia] Secuencia leída: {string.Join(", ", secuenciaLeida)}");
+        }
+
+        if (TokenSequenceUtils.SequenceMatchesTail(secuenciaLeida, secuenciaObjetivo))
+        {
+            SecuenciaCompletada = true;
+            TokenSequenceUtils.PaintAllTokens(colorAlCompletar);
+
+            if (mostrarLogs)
+            {
+                Debug.Log("[ContadorSecuencia] Secuencia objetivo completada. Se colorean todos los tokens.");
+            }
         }
     }
 }
