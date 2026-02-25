@@ -6,6 +6,11 @@ public class ContadorCrearSecuencia : MonoBehaviour
     public int plateNumber;
 
     private bool alreadyTriggered = false;
+    private Renderer plateRenderer;
+
+    private void Awake()
+    {
+        plateRenderer = GetComponentInChildren<Renderer>();    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,16 +20,22 @@ public class ContadorCrearSecuencia : MonoBehaviour
         {
             alreadyTriggered = true;
 
-            ContadorSecuencia gm = ContadorSecuencia.Instance;
-
-            if (gm != null)
+            if (ContadorSecuencia.Instance != null)
             {
-                gm.RegisterNumber(plateNumber);
+                ContadorSecuencia.Instance.RegisterNumber(plateNumber);
             }
             else
             {
-                Debug.LogError("GameManager no encontrado en la escena.");
+                Debug.LogError("ContadorSecuencia no encontrado en la escena.");
             }
+        }
+    }
+
+    public void SetGameOverColor()
+    {
+        if (plateRenderer != null)
+        {
+            plateRenderer.material.color = Color.red;
         }
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ContadorSecuencia: MonoBehaviour
+public class ContadorSecuencia : MonoBehaviour
 {
     public static ContadorSecuencia Instance;
 
@@ -29,6 +29,12 @@ public class ContadorSecuencia: MonoBehaviour
 
         Debug.Log("GAME OVER - Número mayor a 100");
 
-        Time.timeScale = 0f;
+        // Buscar todas las placas en la escena
+        ContadorCrearSecuencia[] plates = FindObjectsOfType<ContadorCrearSecuencia>();
+
+        foreach (ContadorCrearSecuencia plate in plates)
+        {
+            plate.SetGameOverColor();
+        }
     }
 }
