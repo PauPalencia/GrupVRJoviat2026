@@ -800,10 +800,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 56473114}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 141
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 8
 --- !u!1 &67262428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,10 +1930,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 186499254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 104
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 13
 --- !u!1 &188316662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3075,10 +3075,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 320957007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 102
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 11
 --- !u!1 &337986689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,10 +3688,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 468819202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 141
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 4
 --- !u!1 &491810633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4066,10 +4066,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 556636053}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 102
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 9
 --- !u!1 &568666452
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,10 +4267,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 615566747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 3
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 10
 --- !u!1001 &617382752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5163,7 +5163,7 @@ Transform:
   m_GameObject: {fileID: 721692620}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.68, y: -0.191, z: 8.43}
+  m_LocalPosition: {x: -1.17, y: -0.191, z: 1.42}
   m_LocalScale: {x: 1, y: 0.010805877, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5423,10 +5423,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 762050831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 110
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 3
 --- !u!1 &789606133
 GameObject:
   m_ObjectHideFlags: 0
@@ -8124,6 +8124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b7bb16f7724db741a3fb6084e2af4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ContadorSeciencaia
+  secuenciaObjetivo: 01000000020000000300000004000000
+  colorAlCompletar: {r: 0, g: 1, b: 0, a: 1}
+  mostrarLogs: 1
 --- !u!1 &1137656759
 GameObject:
   m_ObjectHideFlags: 0
@@ -8991,10 +8994,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1297110847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 151
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 12
 --- !u!1 &1299541891
 GameObject:
   m_ObjectHideFlags: 0
@@ -9986,10 +9989,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1457941058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 104
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 6
 --- !u!1 &1461692291
 GameObject:
   m_ObjectHideFlags: 0
@@ -10903,10 +10906,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599538655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 151
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 16
 --- !u!1 &1599756231
 GameObject:
   m_ObjectHideFlags: 0
@@ -11157,10 +11160,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1651333639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 2
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 7
 --- !u!1 &1654625938
 GameObject:
   m_ObjectHideFlags: 0
@@ -11360,10 +11363,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1685783052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 4
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 15
 --- !u!1 &1700309069
 GameObject:
   m_ObjectHideFlags: 0
@@ -12342,10 +12345,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1847661618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 1
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 2
 --- !u!1001 &1852612873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13824,10 +13827,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1985567363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 105
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 14
 --- !u!1 &1991043117
 GameObject:
   m_ObjectHideFlags: 0
@@ -14191,10 +14194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2040699663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 102
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 1
 --- !u!1 &2044002660
 GameObject:
   m_ObjectHideFlags: 0
@@ -14330,10 +14333,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2061299837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5fbb3c7f7e9c0f478af2c036f962a50, type: 3}
+  m_Script: {fileID: 11500000, guid: 24d8145a5c526ab449a8a63403fd385d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContadorCrearSecuencia
-  plateNumber: 104
+  m_EditorClassIdentifier: Assembly-CSharp::CrearSecuencia
+  numeroToken: 5
 --- !u!1 &2063235363
 GameObject:
   m_ObjectHideFlags: 0

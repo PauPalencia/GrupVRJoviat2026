@@ -4,7 +4,7 @@ using UnityEngine;
 public class ContadorSecuencia : MonoBehaviour
 {
     [Header("Secuencia objetivo (configurable en Inspector)")]
-    [SerializeField] private List<int> secuenciaObjetivo = new List<int> { 1, 2, 3, 4 };
+    [SerializeField] private List<int> secuenciaObjetivo = new List<int> { 2, 7, 10, 15 };
 
     [Header("Acción al completar secuencia")]
     [SerializeField] private Color colorAlCompletar = Color.green;
