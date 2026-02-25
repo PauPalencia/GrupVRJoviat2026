@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -26,13 +27,13 @@ public static class TokenSequenceUtils
             return true;
         }
 
-        TMP_Text tmp = source.GetComponentInChildren<TMP_Text>();
+        TMP_Text tmp = source.GetComponentInChildren<TMP_Text>(true);
         if (tmp != null && TryParseNumber(tmp.text, out number))
         {
             return true;
         }
 
-        TextMesh textMesh = source.GetComponentInChildren<TextMesh>();
+        TextMesh textMesh = source.GetComponentInChildren<TextMesh>(true);
         if (textMesh != null && TryParseNumber(textMesh.text, out number))
         {
             return true;
@@ -41,8 +42,11 @@ public static class TokenSequenceUtils
         return false;
     }
 
-    public static void PaintAllTokens(Color color)
+    public static int PaintAllTokens(Color color)
     {
+        HashSet<Renderer> renderersToPaint = new HashSet<Renderer>();
+
+        // Ruta principal: objetos cuyo nombre empiece por "token".
         Transform[] allTransforms = Object.FindObjectsOfType<Transform>(true);
         foreach (Transform transform in allTransforms)
         {
@@ -51,15 +55,54 @@ public static class TokenSequenceUtils
                 continue;
             }
 
-            Renderer[] renderers = transform.GetComponentsInChildren<Renderer>(true);
-            foreach (Renderer renderer in renderers)
+            foreach (Renderer renderer in transform.GetComponentsInChildren<Renderer>(true))
             {
-                foreach (Material material in renderer.materials)
+                renderersToPaint.Add(renderer);
+            }
+        }
+
+        // Fallback: cualquier objeto con CrearSecuencia, por si el nombre no sigue el patrón "token".
+        if (renderersToPaint.Count == 0)
+        {
+            CrearSecuencia[] tokens = Object.FindObjectsOfType<CrearSecuencia>(true);
+            foreach (CrearSecuencia token in tokens)
+            {
+                foreach (Renderer renderer in token.GetComponentsInChildren<Renderer>(true))
                 {
-                    material.color = color;
+                    renderersToPaint.Add(renderer);
                 }
             }
         }
+
+        foreach (Renderer renderer in renderersToPaint)
+        {
+            foreach (Material material in renderer.materials)
+            {
+                ApplyColorToMaterial(material, color);
+            }
+        }
+
+        return renderersToPaint.Count;
+    }
+
+    private static void ApplyColorToMaterial(Material material, Color color)
+    {
+        if (material == null)
+        {
+            return;
+        }
+
+        if (material.HasProperty("_Color"))
+        {
+            material.SetColor("_Color", color);
+        }
+
+        if (material.HasProperty("_BaseColor"))
+        {
+            material.SetColor("_BaseColor", color);
+        }
+
+        material.color = color;
     }
 
     private static bool IsTokenName(string name)

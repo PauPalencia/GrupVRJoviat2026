@@ -59,11 +59,11 @@ public class ContadorSecuencia : MonoBehaviour
             if (indiceEsperado >= secuenciaObjetivo.Count)
             {
                 SecuenciaCompletada = true;
-                TokenSequenceUtils.PaintAllTokens(colorAlCompletar);
+                int tokensColoreados = TokenSequenceUtils.PaintAllTokens(colorAlCompletar);
 
                 if (mostrarLogs)
                 {
-                    Debug.Log("[ContadorSecuencia] Secuencia completada. Todos los token se han coloreado.");
+                    Debug.Log($"[ContadorSecuencia] Secuencia completada. Renderers coloreados: {tokensColoreados}.");
                 }
             }
 
