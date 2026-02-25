@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -13,6 +12,13 @@ public static class TokenSequenceUtils
         if (source == null)
         {
             return false;
+        }
+
+        CrearSecuencia crearSecuencia = source.GetComponentInParent<CrearSecuencia>();
+        if (crearSecuencia != null)
+        {
+            number = crearSecuencia.NumeroToken;
+            return true;
         }
 
         if (TryParseNumber(source.name, out number))
@@ -54,25 +60,6 @@ public static class TokenSequenceUtils
                 }
             }
         }
-    }
-
-    public static bool SequenceMatchesTail(IReadOnlyList<int> values, IReadOnlyList<int> expected)
-    {
-        if (values == null || expected == null || expected.Count == 0 || values.Count < expected.Count)
-        {
-            return false;
-        }
-
-        int offset = values.Count - expected.Count;
-        for (int i = 0; i < expected.Count; i++)
-        {
-            if (values[offset + i] != expected[i])
-            {
-                return false;
-            }
-        }
-
-        return true;
     }
 
     private static bool IsTokenName(string name)
