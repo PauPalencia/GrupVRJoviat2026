@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class ContadorSecuencia : MonoBehaviour
 {
+    [Header("Secuencia objetivo (configurable en Inspector)")]
+    [SerializeField] private List<int> secuenciaObjetivo = new List<int> { 1, 2, 3, 4 };
+
     [Header("Acción al completar secuencia")]
     [SerializeField] private Color colorAlCompletar = Color.green;
 
@@ -39,8 +42,7 @@ public class ContadorSecuencia : MonoBehaviour
 
         secuenciaLeida.Add(numero);
 
-        int[] secuenciaObjetivo = CrearSecuencia.SecuenciaObjetivo;
-        if (secuenciaObjetivo == null || secuenciaObjetivo.Length == 0)
+        if (secuenciaObjetivo == null || secuenciaObjetivo.Count == 0)
         {
             return;
         }
@@ -51,10 +53,10 @@ public class ContadorSecuencia : MonoBehaviour
 
             if (mostrarLogs)
             {
-                Debug.Log($"[ContadorSecuencia] Correcto: {numero}. Progreso {indiceEsperado}/{secuenciaObjetivo.Length}.");
+                Debug.Log($"[ContadorSecuencia] Correcto: {numero}. Progreso {indiceEsperado}/{secuenciaObjetivo.Count}.");
             }
 
-            if (indiceEsperado >= secuenciaObjetivo.Length)
+            if (indiceEsperado >= secuenciaObjetivo.Count)
             {
                 SecuenciaCompletada = true;
                 TokenSequenceUtils.PaintAllTokens(colorAlCompletar);
@@ -72,7 +74,7 @@ public class ContadorSecuencia : MonoBehaviour
 
         if (mostrarLogs)
         {
-            Debug.Log($"[ContadorSecuencia] Número {numero} fuera de secuencia. Reinicio de progreso a {indiceEsperado}/{secuenciaObjetivo.Length}.");
+            Debug.Log($"[ContadorSecuencia] Número {numero} fuera de secuencia. Reinicio de progreso a {indiceEsperado}/{secuenciaObjetivo.Count}.");
         }
     }
 }
