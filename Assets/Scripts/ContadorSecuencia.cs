@@ -3,78 +3,42 @@ using UnityEngine;
 
 public class ContadorSecuencia : MonoBehaviour
 {
-    [Header("Secuencia objetivo (configurable en Inspector)")]
+    [Header("Secuencia correcta")]
     [SerializeField] private List<int> secuenciaObjetivo = new List<int> { 2, 7, 10, 15 };
 
-    [Header("Acción al completar secuencia")]
-    [SerializeField] private Color colorAlCompletar = Color.green;
+    [Header("Colores")]
+    [SerializeField] private Color colorCorrecto = Color.green;
+    [SerializeField] private Color colorIncorrecto = Color.red;
 
-    [Header("Depuración")]
-    [SerializeField] private bool mostrarLogs = true;
-
-    private readonly List<int> secuenciaLeida = new List<int>();
-    private int indiceEsperado;
-
-    public IReadOnlyList<int> SecuenciaLeida => secuenciaLeida;
-    public bool SecuenciaCompletada { get; private set; }
+    private int indiceActual = 0;
+    private bool secuenciaTerminada = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        RevisarEntrada(other.gameObject);
-    }
+        if (secuenciaTerminada) return;
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        RevisarEntrada(collision.gameObject);
-    }
-
-    private void RevisarEntrada(GameObject objeto)
-    {
-        if (SecuenciaCompletada)
-        {
+        if (!TokenSequenceUtils.TryGetTokenNumber(other.gameObject, out int numero))
             return;
-        }
 
-        if (!TokenSequenceUtils.TryGetTokenNumber(objeto, out int numero))
+        Debug.Log("Pisado: " + numero);
+
+        // Si es el número correcto
+        if (numero == secuenciaObjetivo[indiceActual])
         {
-            return;
-        }
+            indiceActual++;
 
-        secuenciaLeida.Add(numero);
-
-        if (secuenciaObjetivo == null || secuenciaObjetivo.Count == 0)
-        {
-            return;
-        }
-
-        if (numero == secuenciaObjetivo[indiceEsperado])
-        {
-            indiceEsperado++;
-
-            if (mostrarLogs)
+            if (indiceActual >= secuenciaObjetivo.Count)
             {
-                Debug.Log($"[ContadorSecuencia] Correcto: {numero}. Progreso {indiceEsperado}/{secuenciaObjetivo.Count}.");
+                secuenciaTerminada = true;
+                TokenSequenceUtils.PaintAllTokens(colorCorrecto);
+                Debug.Log("SECUENCIA COMPLETADA");
             }
-
-            if (indiceEsperado >= secuenciaObjetivo.Count)
-            {
-                SecuenciaCompletada = true;
-                int tokensColoreados = TokenSequenceUtils.PaintAllTokens(colorAlCompletar);
-
-                if (mostrarLogs)
-                {
-                    Debug.Log($"[ContadorSecuencia] Secuencia completada. Renderers coloreados: {tokensColoreados}.");
-                }
-            }
-
-            return;
         }
-
-        indiceEsperado = numero == secuenciaObjetivo[0] ? 1 : 0;
-
-        if (mostrarLogs)
+        else
         {
-            Debug.Log($"[ContadorSecuencia] Número {numero} fuera de secuencia. Reinicio de progreso a {indiceEsperado}/{secuenciaObjetivo.Count}.");
+            secuenciaTerminada = true;
+            TokenSequenceUtils.PaintAllTokens(colorIncorrecto);
+            Debug.Log("SECUENCIA INCORRECTA");
         }
     }
 }
